@@ -1,23 +1,12 @@
-body{   background-color: #1E2640 !important;
+*{
+    box-sizing: border-box;
 }
-/*Header*/
-#cabecalho .navbar{    background-color: #f2f2f2;
-    padding-top: 0px;
-    padding-bottom: 0px;
+
+body{   
+    background-color: #1E2640 !important;
+    overflow-x: hidden;
 }
-#cabecalho .icon-perfil{   color: #328C73;
-}
-#cabecalho .nav-link{  background-color: #328C73;
-}
-/**/
-#formulario .row{ background-color: #174873;
-}
-#formulario .texto-form p{
-    color: #ADD9B0;
-}
-#formulario .texto-form button{
-    background-color: #328C73;
-}
+
 /*Categorias*/
 #categorias .main-dois{
     background-color: #174873;
@@ -31,26 +20,55 @@ body{   background-color: #1E2640 !important;
 .text-white, h2{
     color: #f2f2f2 !important;
 }
-/*Simulação*/
-#sim .simulacao{
-    background-color: #174873;
+.titulo{
+    color: #f2f2f2; 
 }
-#sim .simulacao p{
-    color: #ADD9B0 ;
+
+.card{
+    background-color: #174873 !important;
+    border: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
 }
-/*Footer*/
-#rodape .footer{
-    background-color: #f2f2f2;
-    width: calc(100% - 80px); 
-    margin-left: 40px;
-    margin-right: 40px;
+.card-title, .card-text{
+    color: #f2f2f2 !important;
 }
-#rodape .footer h2{
-    color: #328C73 !important;
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(50, 140, 115, 0.3);
 }
-#rodape .footer h5 button{
-    background-color: #37486C;
+h4,li{
+    color:#f2f2f2 !important;
 }
-#rodape .footer p{
-    color: #328C73;
+
+/* Estilizando ícones */
+.fa-solid, .fa-regular, .fa-brands {
+    color: #ADD9B0;
+    margin-right: 8px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.titulo i {
+    color: #50D99F;
+    font-size: 1.2em;
+}
+
+.card-title i {
+    color: #4ECDC4;
+    font-size: 1.1em;
+}
+
+h2 i {
+    color: #FFD93D;
+    margin-right: 10px;
+}
+.dica{
+    text-align: center;
+    color:#f2f2f2;
+}
+p{
+    color:#f2f2f2;
+}
+
+

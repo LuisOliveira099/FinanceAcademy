@@ -1,0 +1,186 @@
+{
+  "investimentos": {
+    "titulo": "Investimentos",
+    "descrição": "Os investimentos são poderosos mecanismos para fazer o dinheiro trabalhar para você !",
+    "vantagens": [
+      "Rendimentos superiores à poupança",
+      "Protege o capital contra a inflação",
+      "Possibilidade de renda passiva",
+      "Construção de patrimônio no longo prazo",
+      "Realização de sonhos e metas"
+    ],
+    "dica": "Antes de investir, conheça os riscos, seu perfil e seus objetivos !",
+    "tiposInvestimento": [
+      {
+        "id": 1,
+        "nome": "CDB",
+        "classificação": "Renda fixa",
+        "descrição": "Certificado de Depósito Bancário, na qual se empresta dinheiro para o banco e em troca recebe juros"
+      },
+      {
+        "id": 2,
+        "nome": "Tesouro Direto",
+        "classificação": "Renda fixa",
+        "descrição": "Títulos públicos federais de baixo risco e alta previsibilidade, basicamente se empresta dinheiro para o governo e em troca recebe juros"
+      },
+      {
+        "id": 3,
+        "nome": "LCI/LCA",
+        "classificação": "Renda fixa",
+        "descrição": "Títulos isentos de IR lastreados em crédito imobiliário ou do agronegócio."
+      },
+      {
+        "id": 4,
+        "nome": "Ações",
+        "classificação": "Renda variável",
+        "descrição": "Menor fração de uma empresa e geralmente são negociadas na Bolsa de Valores, podendo auferir lucros com ganho de capital e recebimento de proventos. Porém, possui um risco maior"
+      },
+      {
+        "id": 5,
+        "nome": "Fundos de Investimento Imobiliário (FII'S)",
+        "classificação": "Renda variável",
+        "descrição": "São fundos que reúnem capital de vários investidores para aplicar no mercado imobiliário. Ao comprar um cota, o investidor tem o direito de receber parte dos lucros e dos aluguéis proporcionais."
+      },
+      {
+        "id": 6,
+        "nome": "Criptomoedas",
+        "classificação": "Renda variável",
+        "descrição": "Investimento de risco extremamente alto, na qual se investe em ativos digitais"
+      }
+    ]
+  },
+
+  "planejamentos": {
+    "titulo": "Planejamentos",
+    "descricao": "O planejamento é de suma importância para um maior controle da vida financeira, garatindo mais qualidade de vida !",
+    "vantagens": [
+      "Organização de receitas e despesas",
+      "Alocações de gastos bem definidas",
+      "Maior previsibilidade e controle",
+      "Auxilia a alcançar metas e objetivos",
+      "Sustentabilidade financeira"
+    ],
+    "dica": "Ajuste os métodos de acordo com a sua realidade",
+    "tiposMetodo": [
+      {
+        "id": 1,
+        "nome": "50/30/20",
+        "classificacao": "",
+        "descrição": "Este método consiste em dividir a sua renda líquida em 3 categorias: <br> 50% : Gastos essenciais <br> 30% : Desejos (estilo de vida)<br> 20% : Investimentos e reserva de emergência"
+      },
+      {
+        "id": 2,
+        "nome": "50/35/15",
+        "classificacao": "",
+        "descrição": "Método que consiste em dividir a renda líquida em 3 categorias: <br> 50% : Gastos essenciais <br> 35% : Desejos (estilo de vida) <br> 15% : Investimentos"
+      },
+      {
+        "id": 3,
+        "nome": "70/30",
+        "classificacao": "",
+        "descrição": "Método mais simplista para a divisão do salário: <br> 70% : Gastos essenciais e estilo de vida <br> 30% : Investimentos"
+      },
+      {
+        "id": 4,
+        "nome": "Método dos 6 potes",
+        "classificacao": "",
+        "descrição": "Propõe uma divisão mais detalhada do rendimento: <br> 55% : Despesas Essenciais <br> 10% : Lazer <br> 10% : Plano de longo prazo/Aposentadoria <br> 10% : Educação <br> 10% : Reserva de Emergência <br> 5% : Extras."
+      }
+    ]
+  },
+
+  "aposentadoria": {
+    "titulo": "Aposentadoria",
+    "descricao": "A aposentadoria representa a construção de estabilidade financeira para o futuro, permitindo mais segurança e qualidade de vida.",
+    "vantagens": [
+      "Maior segurança financeira no futuro",
+      "Possibilidade de manter o padrão de vida",
+      "Independência financeira na terceira idade",
+      "Planejamento de longo prazo",
+      "Mais tranquilidade e estabilidade"
+    ],
+    "dica": "Quanto antes começar a investir para aposentadoria, maior será o efeito dos juros compostos a seu favor",
+    "tiposAposentadoria": [
+      {
+        "id": 1,
+        "nome": "INSS",
+        "classificacao": "",
+        "descricao": "Sistema público de aposentadoria do governo brasileiro, baseado em contribuições mensais feitas ao longo da vida profissional."
+      },
+      {
+        "id": 2,
+        "nome": "Previdência Privada",
+        "classificacao": "",
+        "descricao": "Modalidade complementar de aposentadoria oferecida por bancos e seguradoras, permitindo acumular patrimônio para o futuro."
+      },
+      {
+        "id": 3,
+        "nome": "Tesouro IPCA+",
+        "classificacao": "",
+        "descricao": "Título público muito utilizado para aposentadoria por possuir rendimento atrelado à inflação e maior previsibilidade no longo prazo."
+      },
+      {
+        "id": 4,
+        "nome": "Fundos Imobiliários",
+        "classificacao": "",
+        "descricao": "Investimentos que podem gerar renda passiva mensal através de aluguéis distribuídos aos investidores."
+      },
+      {
+        "id": 5,
+        "nome": "Ações de Dividendos",
+        "classificacao": "",
+        "descricao": "Ações de empresas sólidas que distribuem parte dos lucros aos acionistas periodicamente."
+      },
+      {
+        "id": 6,
+        "nome": "Reserva Financeira",
+        "classificacao": "",
+        "descricao": "Acúmulo gradual de patrimônio através de investimentos constantes visando independência financeira futura."
+      }
+    ]
+  },
+
+  "dividas": {
+    "titulo": "Dívidas",
+    "descricao": "As dívidas podem comprometer a saúde financeira quando não há controle e planejamento adequado.",
+    "dica": "Evite comprometer grande parte da sua renda com dívidas, sempre planeje antes de assumir novos compromissos financeiros e nunca gaste mais do que você ganha.",
+    "tiposDivida": [
+      {
+        "id": 1,
+        "nome": "Cartão de Crédito",
+        "classificacao": "Alto risco",
+        "descricao": "Muito utilizado no dia a dia, porém pode gerar juros extremamente altos quando a fatura não é paga integralmente."
+      },
+      {
+        "id": 2,
+        "nome": "Cheque Especial",
+        "classificacao": "Alto risco",
+        "descricao": "Limite automático oferecido pelo banco para cobrir saldo negativo da conta, geralmente com juros elevados."
+      },
+      {
+        "id": 3,
+        "nome": "Financiamento",
+        "classificacao": "Médio risco",
+        "descricao": "Modalidade utilizada para aquisição de bens de maior valor, como imóveis e veículos, através de pagamentos parcelados."
+      },
+      {
+        "id": 4,
+        "nome": "Empréstimo Pessoal",
+        "classificacao": "Médio risco",
+        "descricao": "Crédito concedido por instituições financeiras com pagamento parcelado e incidência de juros."
+      },
+      {
+        "id": 5,
+        "nome": "Crediário",
+        "classificacao": "Baixo risco",
+        "descricao": "Forma de parcelamento oferecida por lojas para facilitar compras de produtos e serviços."
+      },
+      {
+        "id": 6,
+        "nome": "Dívida Negativada",
+        "classificacao": "Situação crítica",
+        "descricao": "Ocorre quando há atraso prolongado no pagamento e o nome do consumidor é registrado em órgãos de proteção ao crédito."
+      }
+    ]
+  }
+}

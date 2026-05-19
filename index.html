@@ -1,133 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-    <title>Financy Academy</title>
+  <title>Categorias</title>
 </head>
+
 <body>
-    <nav id="cabecalho" class="navbar bg-body-tertiary m-5 rounded-2">
-  <div class="container d-flex">
-    <a class="navbar-brand" href="#">
-      <img src="imagens/Logo.png" alt="Financy Academy" width="115" height="100">
-    </a>
-    <ul class="nav nav-pills mx-auto">
-  <li class="nav-item mx-3">
-    <a class="nav-link active m-3" aria-current="page" href="#">Home</a>
-  </li>
-  <li class="nav-item mx-3">
-    <a class="nav-link active m-3" aria-current="page" href="#">Categorias</a>
-  </li>
-  <li class="nav-item mx-3">
-    <a class="nav-link active m-3" aria-current="page" href="#">Contatos</a>
-  </li>
-</ul>
-<button type="button" class="btn icon-perfil">
-  <span class="me-2">Perfil</span>
-  <i class="fa-regular fa-user"></i>
-</button>
-  </div>
-</nav>
-<!--Primeiro bloco-->
-<main>
-    <div id="formulario" class="container p-3 mb-2 text-white mt-5 main-um">
-        <div class="row rounded-2">
-            <div class="col-md-6 text-start font-monospace text-white p-5 texto-form">
-                <h1>Aprenda a<br> economizar<br> seu dinheiro</h1>
-                <p class="fs-4 mt-3">Ajudamos você a economizar independente da <br>sua renda</p>
-                <button id="bTeste" type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#formModal">
-        Iniciar Teste
-      </button>
-<div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content px-5 py-3">
-<!---->
-    </div>
-  </div>
-</div>
-    </div>
-            <div class="col-md-6 p-4 pe-5 text-center">
-            <img src="imagens/imagem1.jpeg" alt="imagnem 1" width="345" height="500">
-            </div>
-        </div>
-    </div>
-<!--Segundo bloco - Categorias-->
-<div id="categorias">
+
+  <!--Segundo bloco - Categorias-->
+  <div id="categorias">
     <h2 class="text-center font-monospace text-white mt-5">Categorias</h2>
     <div class="container text-center p-3 text-white mt-5 rounded-2 main-dois">
-        <p class="text-center font-monospace mt-5 fs-4">Escolha entender o seu dinheiro. Escolha seu futuro.</p>
-        <div class="row">
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem2.jpeg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Investimentos</button>
-            </div>
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem3.jpg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Planejamentos</button>
-            </div>
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem4.jpeg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Aposentadoria</button>
-            </div>
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem5.jpeg" alt="" width="220" height="330">
-                <br><button type="button" class="btn btn-outline text-white mt-5">Dívidas</button>
-            </div>
-    </div>
-    </div>
-</main>
-<!--Simulação-->
-<div id="sim">
-<h2 class="text-center font-monospace text-white mt-5">Quando você escolhe<br>aprender, você escolhe<br>prosperar.</h2>
-<div class="container text-center mb-2">
-  <div class="row">
-    <div class="col-md-6 offset-md-3 text-white mt-5 rounded-2 simulacao">
-       <div class="mb-3">
-              <h2 class="font-monospace mt-5 fs-4">Simulação</h2>
-              <p>Simule seus investimentos: </p>
-  <label for="formGroupExampleInput" class="form-label p-3"></label>
-  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="...">
-</div>
-<div class="mb-3">
-  <label for="formGroupExampleInput2" class="form-label p-3"></label>
-  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="...">
-</div>
-    </div>
-  </div>
-</div>
-</div>
-<!--Footer-->
-<div id="rodape">
-<div class="container-fluid text-center p-3 mb-2 text-white mt-5 rounded-2 footer"> 
-<div class="row">
-  <h2 class="font-monospace mt-5 fs-4">Central de ajuda</h2>
-  <h5><button type="button" class="btn font-monospace text-white">educacaoficanceira@gmail.com</button></h3>
-  <div class="col">
-        <p class="text-center font-monospace mt-5 fs-4">Contatos</p>
-  <button type="button" class="list-group-item list-group-item-action text-black">Instagram</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">Facebook</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">YouTube</button>
+      <p class="text-center font-monospace mt-5 fs-4">Escolha entender o seu dinheiro. Escolha seu futuro.</p>
+      <div class="row">
+        <div class="col mt-4 pb-5">
+          <img src="imagens/imagem2.jpeg" alt="" width="220" height="330">
+          <a href="investimentos.html"><button type="button"
+              class="btn btn-outline text-white mt-5">Investimentos</button></a>
+        </div>
+        <div class="col mt-4 pb-5">
+          <img src="imagens/imagem3.jpg" alt="" width="220" height="330">
+          <a href="planejamentos.html"><button type="button"
+              class="btn btn-outline text-white mt-5">Planejamentos</button></a>
+        </div>
+        <div class="col mt-4 pb-5">
+          <img src="imagens/imagem4.jpeg" alt="" width="220" height="330">
+          <a href="aposentadoria.html"><button type="button"
+              class="btn btn-outline text-white mt-5">Aposentadoria</button></a>
+        </div>
+        <div class="col mt-4 pb-5">
+          <img src="imagens/imagem5.jpeg" alt="" width="220" height="330">
+          <br><a href="dividas.html"><button type="button" class="btn btn-outline text-white mt-5">Dívidas</button></a>
+        </div>
       </div>
-      <div class="col">
-        <p class="text-center font-monospace mt-5 fs-4">Recursos</p>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">Políticas de Privacidade</button>
-      </div>
-      <div class="col">
-        <p class="text-center font-monospace mt-5 fs-4">Sobre</p>
-  <button type="button" class="list-group-item list-group-item-action text-black">Nossa História</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-      </div>
-</div>
-  <p class="text-center font-monospace mt-5 fs-6">© Todos os direitos reservados</p>
-</div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="scread.js"></script>
-  </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="scread.js"></script>
+</body>
+
 </html>
