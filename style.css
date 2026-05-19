@@ -1,56 +1,35 @@
-body{   background-color: #1E2640 !important;
+
+nav.navbar {
+    background-color: #f2f2f2 !important;
+    /* Borda azul claro bem nítida */
+    border: 3px solid #00D4FF !important; 
+    border-radius: 15px !important;
+  
+    display: flex !important;
+    box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.3) !important;
+    
+    /* Remove qualquer margem negativa que o Bootstrap possa aplicar */
+    margin-top: 20px !important; 
+    margin-bottom: 20px !important;
 }
-/*Header*/
-#cabecalho .navbar{    background-color: #f2f2f2;
-    padding-top: 0px;
-    padding-bottom: 0px;
+
+nav.navbar .container {
+    background: transparent !important;
 }
-#cabecalho .icon-perfil{   color: #328C73;
+
+body { background-color: #1E2640 !important; }
+
+.icon-perfil, #btn_configuracoes {
+    color: #328C73 !important; 
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+    text-decoration: none;
 }
-#cabecalho .nav-link{  background-color: #328C73;
+
+.icon-perfil:hover {
+    color: #2ECC71 !important;
 }
-/**/
-#formulario .row{ background-color: #174873;
-}
-#formulario .texto-form p{
-    color: #ADD9B0;
-}
-#formulario .texto-form button{
-    background-color: #328C73;
-}
-/*Categorias*/
-#categorias .main-dois{
-    background-color: #174873;
-}
-#categorias .main-dois p{
-    color: #ADD9B0;
-}
-#categorias .main-dois button{
-    background-color: #328C73;
-}
-.text-white, h2{
-    color: #f2f2f2 !important;
-}
-/*Simulação*/
-#sim .simulacao{
-    background-color: #174873;
-}
-#sim .simulacao p{
-    color: #ADD9B0 ;
-}
-/*Footer*/
-#rodape .footer{
-    background-color: #f2f2f2;
-    width: calc(100% - 80px); 
-    margin-left: 40px;
-    margin-right: 40px;
-}
-#rodape .footer h2{
-    color: #328C73 !important;
-}
-#rodape .footer h5 button{
-    background-color: #37486C;
-}
-#rodape .footer p{
-    color: #328C73;
-}
+
+/* Botões de tema */
+.btn-light-theme { color: #328C73 !important; font-weight: bold; }
+.btn-dark-theme { background-color: #174873 !important; color: white !important; }
