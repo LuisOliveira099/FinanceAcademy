@@ -1,0 +1,12 @@
+{
+  "simulacoes": [
+    {
+      "aporte": 1000,
+      "juros": 1.5,
+      "tempo": 5,
+      "total": 1077.2840038843744,
+      "id": "czYMpDuqWHw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
