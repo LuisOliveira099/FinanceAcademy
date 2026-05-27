@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodapé</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="empresa">
+                <h2>Finance Academy</h2>
+                <p>Conecte-se conosco pelas redes sociais.</p>
+            </div>
+
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+
+                <a id="instagram" href="#" target="_blank">Instagram</a>
+
+                <a id="facebook" href="#" target="_blank">Facebook</a>
+
+                <a id="linkedin" href="#" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="suporte">
+                <button id="btnAjuda">Precisa de ajuda?</button>
+            </div>
+
+        </div>
+
+    </footer>
+
+    
+    <div class="modal" id="modal">
+
+        <div class="card">
+
+            <span class="fechar" id="fechar">&times;</span>
+
+            <h2>Solicitar Ajuda</h2>
+
+            <form id="formAjuda">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Descreva sua dúvida"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar Solicitação
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
