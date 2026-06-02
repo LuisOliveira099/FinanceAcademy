@@ -1,126 +1,57 @@
-// 1. Configuração do Site
-const siteConfig = {
-    header: {
-        navigation: {
-            menu_items: [
-                { id: "btn_configuracoes", label: "Configurações", action: "OPEN_SETTINGS_MENU" }
-            ]
-        }
-    },
-    settings_features: {
-        theme_management: { options: ["light", "dark"], default: "light" }
-    }
-};
 
-// 2. Lógica de Interface (UI) Responsiva
-function renderSettingsPanel() {
-    // Evita abrir múltiplos painéis
-    if (document.getElementById('panel_settings_overlay')) return;
+function toggleView(viewName) {
+    const homeView = document.getElementById('view_home');
+    const dashView = document.getElementById('view_dashboard');
 
-    const panel = document.createElement('div');
-    panel.id = "panel_settings_overlay";
-    
-    // Estilo centralizado e adaptável
-    Object.assign(panel.style, {
-        position: "fixed",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        backgroundColor: "white",
-        border: "1px solid #ccc",
-        padding: "20px",
-        zIndex: "1000",
-        color: "black",
-        width: "90%",
-        maxWidth: "400px",
-        boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
-        borderRadius: "8px",
-        boxSizing: "border-box"
-    });
-
-    panel.innerHTML = `
-        <h3 style="margin-top:0">Configurações</h3>
-        
-        <div style="margin-bottom:15px">
-            <label>Tema:</label><br>
-            <button onclick="setTheme('light')" style="margin-top:5px; padding:8px 12px">Claro</button>
-            <button onclick="setTheme('dark')" style="padding:8px 12px">Escuro</button>
-        </div>
-        
-        <hr>
-        
-        <div style="display:flex; flex-direction:column; gap:10px; margin-top:15px">
-            <label>Novo E-mail:</label>
-            <input type="email" id="input_email" style="padding:8px">
-            
-            <label>Nova Senha:</label>
-            <input type="password" id="input_password" style="padding:8px">
-            
-            <button id="save_data" style="padding:10px; background:#007bff; color:white; border:none; border-radius:4px; cursor:pointer">
-                Salvar Perfil
-            </button>
-        </div>
-        
-        <button onclick="closePanel()" style="margin-top:20px; background:none; border:none; color:gray; cursor:pointer; width:100%">Fechar</button>
-    `;
-
-    document.body.appendChild(panel);
-    document.body.style.overflow = 'hidden'; // Trava o scroll do fundo
-
-    document.getElementById('save_data').onclick = () => {
-        const email = document.getElementById('input_email').value;
-        const pass = document.getElementById('input_password').value;
-        updateUserData(email, pass);
-    };
-}
-
-function closePanel() {
-    const panel = document.getElementById('panel_settings_overlay');
-    if (panel) {
-        panel.remove();
-        document.body.style.overflow = 'auto';
+    if (viewName === 'dashboard') {
+        homeView.style.display = 'none';
+        dashView.style.display = 'block';
+    } else {
+        homeView.style.display = 'block';
+        dashView.style.display = 'none';
     }
 }
 
-// 3. Funções de Ação
-function handleMenuAction(item) {
-    if (item && item.action === "OPEN_SETTINGS_MENU") {
-        renderSettingsPanel();
-    }
-}
-
+/**
+ * Controla a transição dinâmica de classes de tema no elemento body
+ */
 function setTheme(themeName) {
-    document.body.className = themeName + "-theme";
-    localStorage.setItem('app_theme', themeName);
-    console.log(`Tema: ${themeName}`);
+    // Remove classes anteriores para evitar conflitos de estilo
+    document.body.classList.remove('light-theme', 'dark-theme');
+    
+    // Aplica a nova classe selecionada pelo usuário
+    document.body.classList.add(themeName + "-theme");
 }
 
-function updateUserData(newEmail, newPassword) {
-    if (!newEmail || !newPassword) {
-        return alert("Preencha todos os campos!");
-    }
-    console.log("Update profile:", { email: newEmail, password: newPassword });
-    alert("Dados atualizados!");
-    closePanel();
-}
-
-// 4. Inicialização
+// Inicializador de eventos da página
 document.addEventListener("DOMContentLoaded", () => {
-    // Garante viewport para mobile
-    if (!document.querySelector('meta[name="viewport"]')) {
-        const meta = document.createElement('meta');
-        meta.name = "viewport";
-        meta.content = "width=device-width, initial-scale=1.0";
-        document.head.appendChild(meta);
+    
+    // Mapeia o clique no perfil da Home (aceita o ID novo ou o ID antigo)
+    const profileBtn = document.getElementById("btn_meu_perfil") || document.getElementById("btn_configuracoes");
+    
+    if (profileBtn) {
+        profileBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleView('dashboard');
+        });
     }
 
-    const configBtn = document.getElementById('btn_configuracoes');
-    if (configBtn) {
-        configBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const menuItems = siteConfig.header.navigation.menu_items;
-            const itemData = menuItems.find(i => i.id === "btn_configuracoes");
-            handleMenuAction(itemData);
-        });
+    // Gerencia a submissão dos dados de e-mail e senha inseridos na barra lateral
+    const saveBtn = document.getElementById('dash_save_data');
+    if (saveBtn) {
+        saveBtn.onclick = () => {
+            const email = document.getElementById('dash_input_email').value;
+            const pass = document.getElementById('dash_input_password').value;
+            
+            if (!email || !pass) {
+                alert("Por favor, preencha o e-mail e a senha na barra lateral antes de atualizar.");
+            } else {
+                alert("Dados de perfil atualizados com sucesso diretamente no painel!");
+                
+                // Limpa os campos após a confirmação
+                document.getElementById('dash_input_email').value = '';
+                document.getElementById('dash_input_password').value = '';
+            }
+        };
     }
 });
