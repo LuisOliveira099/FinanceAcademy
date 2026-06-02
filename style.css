@@ -1,0 +1,35 @@
+
+nav.navbar {
+    background-color: #f2f2f2 !important;
+    /* Borda azul claro bem nítida */
+    border: 3px solid #00D4FF !important; 
+    border-radius: 15px !important;
+  
+    display: flex !important;
+    box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.3) !important;
+    
+    /* Remove qualquer margem negativa que o Bootstrap possa aplicar */
+    margin-top: 20px !important; 
+    margin-bottom: 20px !important;
+}
+
+nav.navbar .container {
+    background: transparent !important;
+}
+
+body { background-color: #1E2640 !important; }
+
+.icon-perfil, #btn_configuracoes {
+    color: #328C73 !important; 
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-perfil:hover {
+    color: #2ECC71 !important;
+}
+
+/* Botões de tema */
+.btn-light-theme { color: #328C73 !important; font-weight: bold; }
+.btn-dark-theme { background-color: #174873 !important; color: white !important; }

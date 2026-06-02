@@ -1,0 +1,22 @@
+"2_manipulacao_dados_e_simulacoes": {
+    "dados_formulario_coletados": {
+      "usuario_id": "usr_98765",
+      "renda_mensal": 5500.00,
+      "capacidade_investimento_mensal": 800.00,
+      "objetivo": "Aposentadoria",
+      "prazo_anos": 20,
+      "tolerancia_risco_score": 3 
+    },
+    "regra_geracao_investimento": {
+      "calcular_perfil": "if (tolerancia_risco_score <= 3) return 'Conservador'; else if (tolerancia_risco_score <= 7) return 'Moderado'; else return 'Arrojado';",
+      "perfil_calculado": "Conservador"
+    },
+    "resultado_simulacao_gerada": {
+      "simulacao_id": "sim_01234",
+      "data_criacao": "2026-05-16T14:30:00Z",
+      "valor_total_projetado": 354000.00,
+      "carteira_recomendada": [
+        { "ativo": "Tesouro IPCA+ 2045", "porcentagem_alocacao": 70.0, "tipo": "Renda Fixa" },
+        { "ativo": "CDB Banco Seguro 120% CDI", "porcentagem_alocacao": 30.0, "tipo": "Renda Fixa" }
+      ]
+    }
