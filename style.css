@@ -18,6 +18,18 @@ body{   background-color: #1E2640 !important;
 #formulario .texto-form button{
     background-color: #328C73;
 }
+#formModal .modal-content{
+    background-color: #174873;
+    opacity: 0.9;
+    color: #f2f2f2;
+    overflow-y: auto; 
+}
+
+#formModal .enviar{
+    border: none;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
 /*Categorias*/
 #categorias .main-dois{
     background-color: #174873;
