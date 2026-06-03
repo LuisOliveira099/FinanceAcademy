@@ -1,0 +1,25 @@
+{
+  "usuarios": [
+    { "id": 1, "nome": "Ana" },
+    { "id": 2, "nome": "Bruno" }
+  ],
+  "header": [
+    { "titulo": "Home", "url": "#" },
+    { "titulo": "Categorias", "url": "#" },
+    { "titulo": "Contatos", "url": "#" }
+  ],
+
+  "respostasForm": [
+    
+  ],
+
+  "simulacoes": [
+    {
+      "aporte": 1000,
+      "juros": 1.5,
+      "tempo": 5,
+      "total": 1077.2840038843744,
+      "id": "czYMpDuqWHw"
+    }
+  ]
+}
