@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-    <title>Finance Academy</title>
+  <title>Finance Academy</title>
 </head>
+
 <body class="light-theme">
 
   <div id="view_home">
@@ -16,7 +19,7 @@
         <a class="navbar-brand" href="#">
           <img src="imagens/Logo.png" alt="Finance Academy" width="115" height="100">
         </a>
-        
+
         <ul class="nav nav-pills mx-auto">
           <li class="nav-item mx-2"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item mx-2"><a class="nav-link active" href="#">Categorias</a></li>
@@ -24,8 +27,8 @@
         </ul>
 
         <a href="#" id="btn_meu_perfil" class="icon-perfil">
-           <span>Meu Perfil</span>
-           <i class="fa-solid fa-circle-user fa-2xl"></i>
+          <span>Meu Perfil</span>
+          <i class="fa-solid fa-circle-user fa-2xl"></i>
         </a>
       </div>
     </nav>
@@ -33,13 +36,13 @@
 
   <div id="view_dashboard" style="display: none;">
     <div class="dashboard-wrapper">
-      
+
       <aside class="sidebar-config">
         <div class="sidebar-header">
           <i class="fa-solid fa-arrow-left back-icon" onclick="toggleView('home')" title="Voltar para Home"></i>
           <h4>Meu Perfil</h4>
         </div>
-        
+
         <div class="config-section">
           <label class="small fw-bold mb-2">Tema do Sistema:</label>
           <div class="d-flex gap-2">
@@ -47,16 +50,18 @@
             <button class="btn btn-sm btn-dark-theme w-50" onclick="setTheme('dark')">Escuro</button>
           </div>
         </div>
-        
+
         <hr class="my-4 text-secondary">
-        
+
         <div class="config-section">
           <label class="form-label small fw-bold">Alterar E-mail:</label>
-          <input type="email" id="dash_input_email" class="form-control form-control-sm mb-3" placeholder="novo@email.com">
-          
+          <input type="email" id="dash_input_email" class="form-control form-control-sm mb-3"
+            placeholder="novo@email.com">
+
           <label class="form-label small fw-bold">Alterar Senha:</label>
-          <input type="password" id="dash_input_password" class="form-control form-control-sm mb-4" placeholder="********">
-          
+          <input type="password" id="dash_input_password" class="form-control form-control-sm mb-4"
+            placeholder="********">
+
           <button class="btn btn-primary btn-sm w-100" id="dash_save_data">Atualizar Dados</button>
         </div>
       </aside>
@@ -81,178 +86,229 @@
 
     </div>
   </div>
-<!--Primeiro bloco-->
-<main>
-    
-  <div id="formulario" class="container p-3 mb-2 text-white mt-5 main-um">
-        <div class="row rounded-2">
-            <div class="col-md-6 text-start font-monospace text-white p-5 texto-form">
-                <h1>Aprenda a<br> economizar<br> seu dinheiro</h1>
-                <p class="fs-4 mt-3">Ajudamos você a economizar independente da <br>sua renda</p>
-                <button id="bTeste" type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#formModal">
-        Iniciar Teste
-      </button>
+  <!--Primeiro bloco-->
+  <main>
 
-<div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
-    <div class="modal-content px-5 py-3">
+    <div id="formulario" class="container p-3 mb-2 text-white mt-5 main-um">
+      <div class="row rounded-2">
+        <div class="col-md-6 text-start font-monospace text-white p-5 texto-form">
+          <h1>Aprenda a<br> economizar<br> seu dinheiro</h1>
+          <p class="fs-4 mt-3">Ajudamos você a economizar independente da <br>sua renda</p>
+          <button id="bTeste" type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+            data-bs-target="#formModal">
+            Iniciar Teste
+          </button>
 
-      <form id="perguntas">
-        <div class="mb-3">
-          <h5>1. Qual é o seu nível de conhecimento em educação financeira?</h5>
-          <div class="form-check">
-  <input class="form-check-input" type="radio" name="nivel" id="radioNenhum" value="Nenhum" checked>
-  <label class="form-check-label" for="radioNenhum"> Nenhum</label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="nivel" id="radioBasico" value="Básico">
-  <label class="form-check-label" for="radioBasico"> Básico</label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="nivel" id="radioIntermediario" value="Intermediário">
-  <label class="form-check-label" for="radioIntermediario"> Intermediário</label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="nivel" id="radioAvancado" value="Avançado">
-  <label class="form-check-label" for="radioAvancado"> Avançado</label>
-</div>
-  <h5>2. Qual é sua faixa etária?</h5>
-  <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="faixa" id="inlineRadio1" value="18-24">
-  <label class="form-check-label" for="inlineRadio1">18-24</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="faixa" id="inlineRadio2" value="25-34">
-  <label class="form-check-label" for="inlineRadio2">25-34</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="faixa" id="inlineRadio3" value="35-44">
-  <label class="form-check-label" for="inlineRadio3">35-44</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="faixa" id="inlineRadio4" value="45+">
-  <label class="form-check-label" for="inlineRadio4">45+</label>
-</div>
-  <h5>3. Quais são seus principais objetivos financeiros?</h5>
-<div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" name="objetivos" id="checkInvestimentos" value="investimentos">
-    <label class="form-check-label" for="checkInvestimentos">Investimentos</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" name="objetivos" id="checkPlanejamento" value="planejamento">
-    <label class="form-check-label" for="checkPlanejamento">Planejamento</label>
-  </div>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" name="objetivos" id="checkAposentadoria" value="aposentadoria">
-  <label class="form-check-label" for="checkAposentadoria">Aposentadoria</label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" name="objetivos" id="checkDividas" value="dividas">
-  <label class="form-check-label" for="checkDividas">Dívidas</label>
-</div>
-  <label for="salario" class="form-label ">4. Qual a sua média salarial?</label>
-  <input type="text" class="form-control" id="salario" placeholder="00,00">
-</div>
-<div class="mb-3">
-  <label for="comentario" class="form-label">5. Algum comentário adicional?</label>
-  <input type="text" class="form-control" id="comentario" placeholder="...">
-</div>
-  <button type="submit" class="enviar" id="envio">Enviar</button>
-</form>
-</div>
-  </div>
-</div>
-    </div>
-      <div class="col-md-6 p-4 pe-5 text-center">
-        <img src="imagens/imagem1.jpeg" alt="imagnem 1" class="img-fluid" width="345" height="500" >
-      </div>
-    </div>
-  </div>
-<!--Segundo bloco - Categorias-->
-<div id="categorias">
-    <h2 class="text-center font-monospace text-white mt-5">Categorias</h2>
-    <div class="container text-center p-3 text-white mt-5 rounded-2 main-dois">
-        <p class="text-center font-monospace mt-5 fs-4">Escolha entender o seu dinheiro. Escolha seu futuro.</p>
-        <div class="row">
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem2.jpeg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Investimentos</button>
-            </div>
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem3.jpg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Planejamentos</button>
-            </div>
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem4.jpeg" alt="" width="220" height="330">
-                <button type="button" class="btn btn-outline text-white mt-5">Aposentadoria</button>
-            </div>
-            <div class="col mt-4 pb-5">
-                <img src="imagens/imagem5.jpeg" alt="" width="220" height="330">
-                <br><button type="button" class="btn btn-outline text-white mt-5">Dívidas</button>
-            </div>
-    </div>
-    </div>
-</main>
-<!--Simulação-->
-<div id="sim">
-  <h2 class="text-center font-monospace text-white mt-5">Quando você escolhe<br>aprender, você escolhe<br>prosperar.</h2>
-  <div class="container text-center mb-2">
-    <div class="row">
-      <div class="col-md-6 offset-md-3 text-white mt-5 rounded-2 simulacao">
-        <div class="mb-3">
-          <h2 class="font-monospace mt-5 fs-4">Simulação</h2>
-          <p>Simule seus investimentos: </p>
-          
-          <div class="container mt-5">
-            <div class="row justify-content-center">
-              <div class="col-md-12 p-4 shadow rounded bg-light text-dark" id="Campos">
-                <h2 class="mb-4 text-dark fw-bold">Simulação</h2>
+          <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+              <div class="modal-content px-5 py-3">
 
-                <form id="formularioSimulacao" onsubmit="tratarEnvio(event)">
-                  <div class="d-flex flex-column">
-                    <input id="Aporte" class="form-control mb-3" type="text"
-                      oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/,/g, '.').replace(/(\..*?)\..*/g, '$1')"
-                      placeholder="Aporte inicial">
-
-                    <input id="Juros" class="form-control mb-3" type="text"
-                      oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/,/g, '.').replace(/(\..*?)\..*/g, '$1')"
-                      placeholder="Taxa de juros">
-
-                    <input id="Tempo" class="form-control mb-4" type="text"
-                      oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Tempo (meses)">
-
-                    <input id="Montante" class="form-control mb-3" placeholder="Resultado" readonly>
+                <form id="perguntas">
+                  <div class="mb-3">
+                    <h5>1. Qual é o seu nível de conhecimento em educação financeira?</h5>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="nivel" id="radioNenhum" value="Nenhum" checked>
+                      <label class="form-check-label" for="radioNenhum"> Nenhum</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="nivel" id="radioBasico" value="Básico">
+                      <label class="form-check-label" for="radioBasico"> Básico</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="nivel" id="radioIntermediario"
+                        value="Intermediário">
+                      <label class="form-check-label" for="radioIntermediario"> Intermediário</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="nivel" id="radioAvancado" value="Avançado">
+                      <label class="form-check-label" for="radioAvancado"> Avançado</label>
+                    </div>
+                    <h5>2. Qual é sua faixa etária?</h5>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="faixa" id="inlineRadio1" value="18-24">
+                      <label class="form-check-label" for="inlineRadio1">18-24</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="faixa" id="inlineRadio2" value="25-34">
+                      <label class="form-check-label" for="inlineRadio2">25-34</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="faixa" id="inlineRadio3" value="35-44">
+                      <label class="form-check-label" for="inlineRadio3">35-44</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="faixa" id="inlineRadio4" value="45+">
+                      <label class="form-check-label" for="inlineRadio4">45+</label>
+                    </div>
+                    <h5>3. Quais são seus principais objetivos financeiros?</h5>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="objetivos" id="checkInvestimentos"
+                          value="investimentos">
+                        <label class="form-check-label" for="checkInvestimentos">Investimentos</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="objetivos" id="checkPlanejamento"
+                          value="planejamento">
+                        <label class="form-check-label" for="checkPlanejamento">Planejamento</label>
+                      </div>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="objetivos" id="checkAposentadoria"
+                        value="aposentadoria">
+                      <label class="form-check-label" for="checkAposentadoria">Aposentadoria</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="objetivos" id="checkDividas"
+                        value="dividas">
+                      <label class="form-check-label" for="checkDividas">Dívidas</label>
+                    </div>
+                    <label for="salario" class="form-label ">4. Qual a sua média salarial?</label>
+                    <input type="text" class="form-control" id="salario" placeholder="00,00">
                   </div>
-
-                  <div class="d-flex gap-2">
-                    <button type="submit" class="btn btn-dark flex-grow-1">Simular</button>
-                    <button type="button" onclick="limparCampos()"
-                      class="btn btn-outline-secondary d-flex align-items-center justify-content-center"
-                      title="Limpar Campos">
-                      <i class="fa-solid fa-rotate-right"></i>
-                    </button>
+                  <div class="mb-3">
+                    <label for="comentario" class="form-label">5. Algum comentário adicional?</label>
+                    <input type="text" class="form-control" id="comentario" placeholder="...">
                   </div>
+                  <button type="submit" class="enviar" id="envio">Enviar</button>
                 </form>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-4 pe-5 text-center">
+          <img src="imagens/imagem1.jpeg" alt="imagnem 1" class="img-fluid" width="345" height="500">
+        </div>
+      </div>
+    </div>
+    <!--Segundo bloco - Categorias-->
+    <div id="categorias">
+      <h2 class="text-center font-monospace text-white mt-5">Categorias</h2>
+      <div class="container text-center p-3 text-white mt-5 rounded-2 main-dois">
+        <p class="text-center font-monospace mt-5 fs-4">Escolha entender o seu dinheiro. Escolha seu futuro.</p>
+        <div class="row">
+          <div class="col mt-4 pb-5">
+            <img src="imagens/imagem2.jpeg" alt="" width="220" height="330">
+            <button type="button" class="btn btn-outline text-white mt-5">Investimentos</button>
+          </div>
+          <div class="col mt-4 pb-5">
+            <img src="imagens/imagem3.jpg" alt="" width="220" height="330">
+            <button type="button" class="btn btn-outline text-white mt-5">Planejamentos</button>
+          </div>
+          <div class="col mt-4 pb-5">
+            <img src="imagens/imagem4.jpeg" alt="" width="220" height="330">
+            <button type="button" class="btn btn-outline text-white mt-5">Aposentadoria</button>
+          </div>
+          <div class="col mt-4 pb-5">
+            <img src="imagens/imagem5.jpeg" alt="" width="220" height="330">
+            <br><button type="button" class="btn btn-outline text-white mt-5">Dívidas</button>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!--Simulação-->
+  <div id="sim" class="py-5">
+    <h2 class="text-center font-monospace text-white mb-4">Quando você escolhe<br>aprender, você escolhe<br>prosperar.
+    </h2>
 
-            <div class="table-responsive mt-5 text-dark">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <h4 class="m-0 text-white">Histórico de Simulações</h4>
-                <button onclick="limparHistorico()" class="btn btn-sm btn-outline-danger" title="Limpar Histórico">
-                  Limpar Histórico 🗑️
-                </button>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 p-4 p-md-5 shadow-lg rounded-4 bg-white text-dark border-0" id="Campos">
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="bg-dark text-white rounded-3 p-2 me-3 d-flex align-items-center justify-content-center"
+              style="width: 45px; height: 45px;">
+              <i class="fa-solid fa-chart-line fs-4"></i>
+            </div>
+            <div>
+              <h2 class="m-0 fw-bold fs-3 text-dark">Simulador Financeiro</h2>
+              <p class="text-muted m-0 fs-6">Projete o rendimento do seu dinheiro em tempo real</p>
+            </div>
+          </div>
+
+          <div id="formularioSimulacao">
+
+            <div class="mb-4 text-start">
+              <label for="TipoInvestimento" class="form-label text-secondary small fw-bold text-uppercase">Tipo de
+                Investimento</label>
+              <select class="form-select form-select-lg border-2" id="TipoInvestimento" onchange="atualizarLabels()"
+                style="border-radius: 10px;">
+                <option value="nominal">Poupança (0,5% ao mês)</option>
+                <option value="cdi">CDB / Tesouro Direto (100% do CDI - ~0,85% ao mês)</option>
+                <option value="cdb">LCI / LCA (Isento de IR - ~11,5% ao ano)</option>
+              </select>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
+              <div class="col text-start">
+                <label for="Aporte" class="form-label text-secondary small fw-bold text-uppercase">Quanto vai investir?
+                  (R$)</label>
+                <div class="input-group">
+                  <span class="input-group-text border-2 bg-light font-monospace fw-bold"
+                    style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">R$</span>
+                  <input type="text" class="form-control form-control-lg border-2" id="Aporte" placeholder="500.00"
+                    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;" required>
+                </div>
               </div>
 
-              <table class="table table-striped table-hover border">
+              <div class="col text-start">
+                <label for="Tempo" class="form-label text-secondary small fw-bold text-uppercase">Tempo de
+                  Aplicação</label>
+                <div class="input-group">
+                  <input type="number" class="form-control form-control-lg border-2" id="Tempo" placeholder="6" min="1"
+                    max="24" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" required>
+                  <span class="input-group-text border-2 bg-light fw-semibold"
+                    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">meses</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4 text-start">
+              <label for="Juros" id="labelJuros" class="form-label text-secondary small fw-bold text-uppercase">Taxa de
+                Juros (% ao mês)</label>
+              <input type="text" class="form-control form-control-lg border-2" id="Juros" placeholder="Ex: 0.8"
+                style="border-radius: 10px;" required>
+              <div id="helpJuros" class="form-text text-muted ps-1 mt-2">A porcentagem fixa de rendimento que seu
+                dinheiro terá a cada mês.</div>
+            </div>
+
+            <input type="hidden" id="Montante">
+
+            <div class="d-flex gap-2 mt-4">
+              <button type="button" onclick="simular()" class="btn btn-dark btn-lg flex-grow-1 shadow-sm fw-bold"
+                style="border-radius: 10px; letter-spacing: 0.5px;">
+                Calcular Rendimento
+              </button>
+              <button type="button" onclick="limparCampos()"
+                class="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center p-3"
+                style="border-radius: 10px;" title="Limpar Campos">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <div class="table-responsive mt-5 text-dark text-start">
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2 mb-3">
+              <h4 class="m-0 text-dark fw-bold d-flex align-items-center">
+                <i class="fa-solid fa-history me-2 text-secondary fs-5"></i> Histórico de Simulações
+              </h4>
+              <button type="button" onclick="limparHistorico()"
+                class="btn btn-sm btn-outline-danger px-3 py-2 fw-semibold" style="border-radius: 8px;">
+                Limpar Tudo <i class="fa-regular fa-trash-can ms-1"></i>
+              </button>
+            </div>
+
+            <div class="border rounded-3 overflow-hidden shadow-sm">
+              <table class="table table-hover align-middle mb-0" style="background-color: #fafafa;">
                 <thead class="table-dark">
-                  <tr>
-                    <th>Aporte</th>
-                    <th>Juros</th>
-                    <th>Tempo</th>
-                    <th>Total</th>
+                  <tr class="small text-uppercase" style="letter-spacing: 0.5px;">
+                    <th class="py-3 ps-3">Data / Hora</th>
+                    <th class="py-3">Aporte</th>
+                    <th class="py-3">Taxa / Tipo</th>
+                    <th class="py-3">Tempo</th>
+                    <th class="py-3 pe-3">Total</th>
                   </tr>
                 </thead>
                 <tbody id="corpoTabela">
@@ -265,36 +321,39 @@
       </div>
     </div>
   </div>
-</div>
-<!--Footer-->
-<div id="rodape">
-<div class="container-fluid text-center p-3 mb-2 text-white mt-5 rounded-2 footer"> 
-<div class="row">
-  <h2 class="font-monospace mt-5 fs-4">Central de ajuda</h2>
-  <h5><button type="button" class="btn font-monospace text-white">educacaoficanceira@gmail.com</button></h3>
-  <div class="col">
-        <p class="text-center font-monospace mt-5 fs-4">Contatos</p>
-  <button type="button" class="list-group-item list-group-item-action text-black">Instagram</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">Facebook</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">YouTube</button>
+  <!--Footer-->
+  <div id="rodape">
+    <div class="container-fluid text-center p-3 mb-2 text-white mt-5 rounded-2 footer">
+      <div class="row">
+        <h2 class="font-monospace mt-5 fs-4">Central de ajuda</h2>
+        <h5><button type="button" class="btn font-monospace text-white">educacaoficanceira@gmail.com</button></h3>
+          <div class="col">
+            <p class="text-center font-monospace mt-5 fs-4">Contatos</p>
+            <button type="button" class="list-group-item list-group-item-action text-black">Instagram</button>
+            <button type="button" class="list-group-item list-group-item-action text-black">Facebook</button>
+            <button type="button" class="list-group-item list-group-item-action text-black">YouTube</button>
+          </div>
+          <div class="col">
+            <p class="text-center font-monospace mt-5 fs-4">Recursos</p>
+            <button type="button" class="list-group-item list-group-item-action text-black">---</button>
+            <button type="button" class="list-group-item list-group-item-action text-black">---</button>
+            <button type="button" class="list-group-item list-group-item-action text-black">Políticas de
+              Privacidade</button>
+          </div>
+          <div class="col">
+            <p class="text-center font-monospace mt-5 fs-4">Sobre</p>
+            <button type="button" class="list-group-item list-group-item-action text-black">Nossa História</button>
+            <button type="button" class="list-group-item list-group-item-action text-black">---</button>
+            <button type="button" class="list-group-item list-group-item-action text-black">---</button>
+          </div>
       </div>
-      <div class="col">
-        <p class="text-center font-monospace mt-5 fs-4">Recursos</p>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">Políticas de Privacidade</button>
-      </div>
-      <div class="col">
-        <p class="text-center font-monospace mt-5 fs-4">Sobre</p>
-  <button type="button" class="list-group-item list-group-item-action text-black">Nossa História</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-  <button type="button" class="list-group-item list-group-item-action text-black">---</button>
-      </div>
-</div>
-  <p class="text-center font-monospace mt-5 fs-6">© Todos os direitos reservados</p>
-</div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-  </body>
+      <p class="text-center font-monospace mt-5 fs-6">© Todos os direitos reservados</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
